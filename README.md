@@ -29,5 +29,4 @@ Compatibility
 Dependency
 ----------
 
-- A loader Extension will be needed, which will autmatically add this plugin to the TinyMCE config.
-- As long as this extension not is not yet available, this plugin `pagebreak` has to be added to each config file.
+- To load this plugin and add it to the configuration the extension [[TinyMcePluginLoader]](https://github.com/cliffparnitzky/TinyMcePluginLoader) has to be installed.
