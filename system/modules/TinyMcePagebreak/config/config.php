@@ -25,9 +25,13 @@
  * @author     Cliff Parnitzky
  * @package    TinyMcePagebreak
  * @license    LGPL
- * @filesource
+ * @license    LGPL
  */
 
+// Adding plugin
 $GLOBALS['TINY_PLUGINS'][] = 'pagebreak';
+
+// Adding buttons
+$GLOBALS['TINY_BUTTONS_3'][] = 'separator,pagebreak';
  
 ?>
