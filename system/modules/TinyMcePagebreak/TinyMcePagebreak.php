@@ -21,15 +21,29 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2012-2013
+ * @copyright  Cliff Parnitzky 2013
  * @author     Cliff Parnitzky
  * @package    TinyMcePagebreak
+ * @license    LGPL
  * @license    LGPL
  */
 
 /**
- * Define name and tooltip for preferences (inactive modules)
- */
-$GLOBALS['TL_LANG']['MOD']['TinyMcePagebreak'] = array('TinyMCE Seitenumbruch Plugin', 'Spezielles TinyMCE Plugin zur Erzeugung von Seitenumbrüchen.');
-
+* Class TinyMcePagebreak
+*
+* Class to implement the HOOK for adding configs.
+* @copyright  Cliff Parnitzky 2013
+* @author     Cliff Parnitzky
+*/
+class TinyMcePagebreak {
+	
+	/**
+	 * Adding config for output behavoir
+	 */
+	public function editTinyMcePluginLoaderConfig ($arrTinyConfig) {
+		$arrTinyConfig["pagebreak_separator"] = '"<p style=\"page-break-after: always; height: 0px;\"><img alt=\"\" _mce_src=\"plugins/tinyMCE/themes/advanced/img/trans.gif\" src=\"plugins/tinyMCE/themes/advanced/img/trans.gif\" class=\"mcePageBreak mceItemNoResize\" _moz_resizing=\"true\"></p>"';
+		return $arrTinyConfig;
+	}
+}
+ 
 ?>
