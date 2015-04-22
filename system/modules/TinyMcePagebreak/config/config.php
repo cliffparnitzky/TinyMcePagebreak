@@ -1,8 +1,8 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2014 Leo Feyer
+ * Copyright (C) 2005-2015 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,20 +21,14 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2012-2014
+ * @copyright  Cliff Parnitzky 2012-2015
  * @author     Cliff Parnitzky
- * @package    TinyMcePagebreak
- * @license    LGPL
+ * @package    TinyMcePluginLoader
  * @license    LGPL
  */
 
-// Adding plugin
-$GLOBALS['TINY_PLUGINS'][] = 'pagebreak';
-
-// Adding buttons
-$GLOBALS['TINY_BUTTONS_1'][] = 'separator,pagebreak';
-
-// Adding HOOK to define more special config
-$GLOBALS['TL_HOOKS']['editTinyMcePluginLoaderConfig'][] = array('TinyMcePagebreak', 'editTinyMcePluginLoaderConfig');
+// Adding HOOK to modify config in templates
+$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('TinyMcePluginLoader', 'outputTemplate');
+$GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('TinyMcePluginLoader', 'outputTemplate');
 
 ?>

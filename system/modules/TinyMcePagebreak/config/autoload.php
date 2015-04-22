@@ -3,12 +3,21 @@
 /**
  * Contao Open Source CMS
  *
- * Copyright (c) 2005-2014 Leo Feyer
+ * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package TinyMcePagebreak
+ * @package TinyMcePluginLoader
  * @link    https://contao.org
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
+
+
+/**
+ * Register the namespaces
+ */
+ClassLoader::addNamespaces(array
+(
+	'TinyMcePluginLoader',
+));
 
 
 /**
@@ -16,5 +25,6 @@
  */
 ClassLoader::addClasses(array
 (
-	'TinyMcePagebreak' => 'system/modules/TinyMcePagebreak/TinyMcePagebreak.php',
+	// Classes
+	'TinyMcePluginLoader\TinyMcePluginLoader' => 'system/modules/TinyMcePluginLoader/classes/TinyMcePluginLoader.php',
 ));

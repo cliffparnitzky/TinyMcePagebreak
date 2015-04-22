@@ -1,8 +1,8 @@
-<?php if (!defined('TL_ROOT')) die('You cannot access this file directly!');
+<?php
 
 /**
  * Contao Open Source CMS
- * Copyright (C) 2005-2014 Leo Feyer
+ * Copyright (C) 2005-2015 Leo Feyer
  *
  * Formerly known as TYPOlight Open Source CMS.
  *
@@ -21,15 +21,15 @@
  * Software Foundation website at <http://www.gnu.org/licenses/>.
  *
  * PHP version 5
- * @copyright  Cliff Parnitzky 2012-2014
+ * @copyright  Cliff Parnitzky 2012-2015
  * @author     Cliff Parnitzky
- * @package    TinyMcePagebreak
+ * @package    TinyMcePluginLoader
  * @license    LGPL
  */
 
 /**
  * Define name and tooltip for preferences (inactive modules)
  */
-$GLOBALS['TL_LANG']['MOD']['TinyMcePagebreak'] = array('TinyMCE Seitenumbruch Plugin', 'Spezielles TinyMCE Plugin zur Erzeugung von Seitenumbrüchen.');
+$GLOBALS['TL_LANG']['MOD']['TinyMcePluginLoader'] = array('Loader für zusätzliche TinyMCE Plugins', 'Fügt zusätzlich installiert TinyMCE Plugins der dynamisch der Konfiguration hinzu.');
 
 ?>
