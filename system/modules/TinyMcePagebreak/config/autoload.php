@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2005-2015 Leo Feyer
  *
- * @package TinyMcePluginLoader
+ * @package TinyMcePagebreak
  * @link    https://contao.org
  * @license http://www.gnu.org/licenses/lgpl-3.0.html LGPL
  */
@@ -16,7 +16,7 @@
  */
 ClassLoader::addNamespaces(array
 (
-	'TinyMcePluginLoader',
+	'TinyMceUnderline',
 ));
 
 
@@ -26,5 +26,5 @@ ClassLoader::addNamespaces(array
 ClassLoader::addClasses(array
 (
 	// Classes
-	'TinyMcePluginLoader\TinyMcePluginLoader' => 'system/modules/TinyMcePluginLoader/classes/TinyMcePluginLoader.php',
+	'TinyMceUnderline\TinyMcePagebreak' => 'system/modules/TinyMcePagebreak/classes/TinyMcePagebreak.php',
 ));

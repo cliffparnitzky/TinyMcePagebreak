@@ -23,13 +23,13 @@
  * PHP version 5
  * @copyright  Cliff Parnitzky 2012-2015
  * @author     Cliff Parnitzky
- * @package    TinyMcePluginLoader
+ * @package    TinyMcePagebreak
  * @license    LGPL
  */
 
 /**
  * Define name and tooltip for preferences (inactive modules)
  */
-$GLOBALS['TL_LANG']['MOD']['TinyMcePluginLoader'] = array('Loader für zusätzliche TinyMCE Plugins', 'Fügt zusätzlich installiert TinyMCE Plugins der dynamisch der Konfiguration hinzu.');
+$GLOBALS['TL_LANG']['MOD']['TinyMcePagebreak'] = array('TinyMCE Seitenumbruch Plugin', 'Spezielles TinyMCE Plugin zur Erzeugung von Seitenumbrüchen.');
 
 ?>

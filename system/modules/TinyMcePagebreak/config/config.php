@@ -23,12 +23,15 @@
  * PHP version 5
  * @copyright  Cliff Parnitzky 2012-2015
  * @author     Cliff Parnitzky
- * @package    TinyMcePluginLoader
+ * @package    TinyMcePagebreak
+ * @license    LGPL
  * @license    LGPL
  */
 
-// Adding HOOK to modify config in templates
-$GLOBALS['TL_HOOKS']['outputBackendTemplate'][] = array('TinyMcePluginLoader', 'outputTemplate');
-$GLOBALS['TL_HOOKS']['outputFrontendTemplate'][] = array('TinyMcePluginLoader', 'outputTemplate');
+// Adding plugin
+$GLOBALS['TINY_PLUGINS'][] = 'pagebreak';
+
+// Adding HOOK to define more special config
+$GLOBALS['TL_HOOKS']['editTinyMcePluginLoaderConfig'][] = array('TinyMcePagebreak', 'editTinyMcePluginLoaderConfig');
 
 ?>
