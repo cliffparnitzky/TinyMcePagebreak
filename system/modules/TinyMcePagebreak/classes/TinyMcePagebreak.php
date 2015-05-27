@@ -45,7 +45,7 @@ class TinyMcePagebreak {
 	 * Adding config for output behavoir
 	 */
 	public function editTinyMcePluginLoaderConfig ($arrTinyConfig) {
-		$arrTinyConfig["pagebreak_separator"] = '"<img data-mce-src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" data-mce-resize=\"false\" alt=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" class=\"mce-pagebreak\" data-mce-selected=\"1\" style=\\"page-break-after: always; height: 0px;\\">"';
+		$arrTinyConfig["pagebreak_separator"] = '"<img data-mce-src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" data-mce-resize=\"false\" alt=\"\" src=\"data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7\" class=\"mce-pagebreak\" data-mce-selected=\"1\" style=\\"page-break-after: always; height: 0px;\\">",';
 		return $arrTinyConfig;
 	}
 }
