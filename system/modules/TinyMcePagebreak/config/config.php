@@ -31,6 +31,9 @@
 // Adding plugin
 $GLOBALS['TINY_PLUGINS'][] = 'pagebreak';
 
+// Adding buttons
+$GLOBALS['TINY_BUTTONS_2'][] = 'pagebreak | ';
+
 // Adding HOOK to define more special config
 $GLOBALS['TL_HOOKS']['editTinyMcePluginLoaderConfig'][] = array('TinyMcePagebreak', 'editTinyMcePluginLoaderConfig');
 
